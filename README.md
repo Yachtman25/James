@@ -11,7 +11,7 @@ James is a uniligual, complex chatbot designed and coded on the XML-branch marku
 
 James has a well-equipped arsenal of helpful knowledge, including the ability to solve simple arithmetic (Addition and subtraction, multiplication and division, and exponents/square roots). James can also provide the date and time, simple information about major countries, name the capital of every US State, and even tell you a joke!
 
-James' database can also search topics on several different major sites, such as wikipedia and google, and can give a variety of useful information, such as currency conversion, weights and measurements, and info on computer and physical/biological science. James can also define many words.
+James' database can also search topics on several different major sites, such as wikipedia and google, send emails, and can give a variety of useful information, such as currency conversion, weights and measurements, and info on computer and physical/biological science. James can also define many words.
 
 Although James' capabilities are quite numerous, there are limitations. For example, James' learning is not very advanced, and is still undergoing beta testing.
 
