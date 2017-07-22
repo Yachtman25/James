@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!--Age --> 
+  
+<category>
+<pattern>AGE IN DAYS</pattern>
+<template><interval format="%B %d %Y">
+    <style>days</style>
+    <from><bot name="birthdate"/></from>
+    <to>
+    <date format="%B %d %Y"/>
+    </to>
+</interval></template>
+</category>
+
+<category>
+<pattern>AGE IN MINUTES</pattern>
+<template><interval format="%B %d %Y">
+    <style>minutes</style>
+    <from><bot name="birthdate"/></from>
+    <to>
+    <date format="%B %d %Y"/>
+    </to>
+</interval></template>
+</category>
+
+<!--Date Created -->
+
+<category><pattern>WHEN WERE YOU CREATED</pattern><template>I was created on 4/6/16.
+</template></category>
+
+<!--General Info --> 
+  
+  <category><pattern>AGE</pattern>
+<template>
+<think>
+<set var="years">
+<interval>
+<jformat>MMMMMMMMM dd, YYYY</jformat>
+<style>years</style>
+<from>April 6, 2016</from>
+<to><date jformat="MMMMMMMMM dd, YYYY"/></to>
+</interval>
+</set>
+<set var="months">
+<interval>
+<jformat>MMMMMMMMM dd, YYYY</jformat>
+<style>months</style>
+<from>April 6, 2016</from>
+<to><date jformat="MMMMMMMMM dd, YYYY"/></to>
+</interval>
+</set>
+
+<set var="months2">
+<interval>
+<jformat>MMMMMMMMM dd, YYYY</jformat>
+<style>months</style>
+<from>April 6, 2016</from>
+<to><date jformat="MMMMMMMMM dd, YYYY"/> </to>
+</interval>
+</set>
+</think>
+<condition var="years">
+<li value="0">I am <get var="months"/> months old.</li>
+<li>I am <get var="years"/> years and <get var="months2"/> months old.</li>
+</condition>
+</template>
+</category> 
+  
+  <category>
+      <pattern>HOW OLD ARE YOU</pattern>
+      <template><srai>AGE</srai></template>
+  </category>
+  
+  <category>
+      <pattern>WHAT VERSION ARE YOU</pattern>
+      <template>I am version <bot name="version"/>.</template>
+  </category>
+  
+  <category>
+      <pattern>WHO CREATED YOU</pattern>
+      <template>I was created by <bot name="creator"/>.</template>
+  </category>
+  
+  <category>
+      <pattern>WHO HELPED CREATE YOU</pattern>
+      <template>
+      My creator, <bot name="creator"/> was assisted in my creation by <bot name="helper1"/>.
+      My creator, <bot name="creator"/> was also assisted in my creation by <bot name="helper2"/>.
+      My creator, <bot name="creator"/> was also assisted in my creation by <bot name="helper3"/>.
+      My creator, <bot name="creator"/> was also assisted in my creation by <bot name="helper4"/>.
+      </template>
+  </category>
+  
+  <category>
+  <pattern>TEST SIZE</pattern>
+  <template><size/></template>
+  </category>
+  
+  <category>
+  <pattern>PROGRAM</pattern>
+  <template><program /></template>
+  </category>
+  
+</aiml>
+

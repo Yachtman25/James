@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- WARNING: EXPERIMENTAL! DO NOT TAMPER WITH-->
+
+<category> 
+<pattern>WHAT TIME IS IT</pattern> 
+<template>The local time is: <date format="%I:%M %p" locale="en_US"/> </template>
+</category>
+
+</aiml>

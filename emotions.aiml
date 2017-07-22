@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+      <pattern>IM FEELING *</pattern>
+      <template>Ok. I will remember that you are feeling <set name="emotion1"><star/>.</set></template>
+  </category>
+  
+  <category>
+      <pattern>IM DOING *</pattern>
+      <template>Ok. I will remember that you are doing <set name="emotion4"><star/>.</set></template>
+  </category>
+  
+  <category>
+      <pattern>I FEEL *</pattern>
+      <template>Ok. I will remember that you feel <set name="emotion2"><star/>.</set></template>
+  </category>  
+  
+  <category>
+      <pattern>I FEEL LIKE *</pattern>
+      <template>Ok. I will remember that you feel like <set name="emotion3"><star/>.</set></template>
+  </category>
+  
+  <category>
+      <pattern>HOW AM I FEELING</pattern>
+      <template>You are feeling <get name="emotion1"/></template>
+  </category>
+  
+    <category>
+      <pattern>HOW DO I FEEL</pattern>
+      <template>You feel <get name="emotion2"/></template>
+    </category>
+    
+  <category>
+      <pattern>WHAT DO I FEEL LIKE</pattern>
+      <template>You are feeling like <get name="emotion3"/></template>
+  </category>
+  
+  <category>
+      <pattern>HOW AM I DOING</pattern>
+      <template>You are doing <get name="emotion4"/></template>
+  </category>
+  
+</aiml>

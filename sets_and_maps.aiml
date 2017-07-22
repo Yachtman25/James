@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ 
+<!--colors -->
+
+  <category>
+      <pattern>IS <set>colors</set> A COLOR</pattern>
+      <template>Yes, <star/> is a color.</template>
+  </category>
+  
+<!--states/statecapitals -->
+  
+  <category>
+      <pattern>WHAT IS THE CAPITAL OF <set>states</set></pattern>
+      <template>
+          <map name="statecapitals"><star/></map> is the capital of <star/>.
+      </template>
+  </category>
+  
+<!--states -->
+  
+  <category>
+      <pattern>IS <set>states</set> A STATE</pattern>
+      <template>Yes, <star/> is a state.</template>
+  </category>
+  
+<!--names -->
+  
+   <category>
+      <pattern>IS <set>names</set> A NAME</pattern>
+      <template>Yes, <star/> is a name.</template>
+  </category>
+  
+<!--greetings -->
+  
+   <category>
+      <pattern>IS <set>greetings</set> A GREETING</pattern>
+      <template>Yes, <star/> is a greeting.</template>
+  </category>
+
+<!--activities -->
+ 
+ <category>
+      <pattern>IS <set>activities</set> AN ACTIVITY</pattern>
+      <template>Yes, <star/> is an activity.</template>
+  </category>
+
+</aiml>

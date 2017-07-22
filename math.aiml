@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<aiml version="1.0">
+
+
+
+
+
+
+
+
+
+
+
+<meta name="author" content="Sonoran Diaries"/>
+<meta name="editor" content="Knyte Trypper"/>
+<meta name="corrector" content="Ciprian Murariu"/>
+<meta name="language" content="en"/>
+
+<category>
+<pattern>* PLUS *</pattern>
+<template><think>
+<set name="number1"><star /></set>
+<set name="number2"><person><star index="2" /></person></set>
+</think>
+<script language="JavaScript"> var result = <get name="number1"/> + <get name="number2"/>; document.write(result+".");</script>
+</template>
+</category>
+
+<category>
+<pattern>* PLUS * EQUAL</pattern>
+<template>
+<srai><star /> PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLUS * EQUALS</pattern>
+<template>
+<srai><star /> PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * PLUS *</pattern>
+<template>
+<srai><star /> PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS * + *</pattern>
+<template>
+<srai><star /> PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS *+*</pattern>
+<template>
+<srai>* PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>ADD * PLUS *</pattern>
+<template>
+<srai><star /> PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>ADD * AND *</pattern>
+<template>
+<srai><star /> PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>ADD * + *</pattern>
+<template>
+<srai><star /> PLUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>ADD * + * =</pattern>
+<template>
+<srai><star /> PLUS <star index="2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MINUS *</pattern>
+<template><think><set name="number1"><star /></set><set name="number2"><person><star index="2" /></person></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the 
+answer to that one is </li>
+</random>
+<script language="JavaScript"> var result = <get name="number1"/> - <get name="number2"/>; document.write(result+".");</script></template>
+</category>
+
+<category>
+<pattern>* MINUS * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MINUS * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* SUBTRACTED FROM *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* SUBTRACTED FROM * EQUAL</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* SUBTRACTED FROM * EQUALS</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * MINUS *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * - *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * - * =</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * AND *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SUBTRACT * SUBTRACTED FROM *</pattern>
+<template>
+<srai><star /> MINUS <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TIMES *</pattern>
+<template><think><set name="number1"><star /></set>
+<set name="number2"><person><star index="2" /></person></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the 
+answer to that one is </li>
+</random>
+<script language="JavaScript"> var result = <get name="number1"/> * <get name="number2"/>; document.write(result+".");</script></template>
+</category>
+
+<category>
+<pattern>* TIMES * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TIMES * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* X * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* X * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MULTIPLIED BY * EQUAL</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* MULTIPLIED BY * EQUALS</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * X *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * TIMES *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * AND *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * * *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>MULTIPLY * MULTIPLIED BY *</pattern>
+<template>
+<srai><star /> TIMES <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* DIVIDED BY *</pattern>
+<template><think><set name="number1"><star /></set><set name="number2"><person><star index="2" /></person></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the 
+answer to that one is </li>
+</random>
+<script language="JavaScript"> var result = <get name="number1"/> / <get name="number2"/>; document.write(result+".");</script></template>
+</category>
+
+<category>
+<pattern>* DIVIDED BY * EQUAL</pattern>
+<template>
+<srai><star /> DIVIDED BY <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* DIVIDED BY * EQUALS</pattern>
+<template>
+<srai><star /> DIVIDED BY <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DIVIDE * DIVIDED BY *</pattern>
+<template>
+<srai><star /> DIVIDED BY <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DIVIDE * DIVIDED BY * =</pattern>
+<template>
+<srai><star /> DIVIDED BY <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DIVIDE * AND *</pattern>
+<template>
+<srai><star /> DIVIDED BY <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DIVIDE * / *</pattern>
+<template>
+<srai><star /> DIVIDED BY <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DIVIDE * / * =</pattern>
+<template>
+<srai><star /> DIVIDED BY <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>SQUARE ROOT OF *</pattern>
+<template><think><set name="number"><star/></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the 
+answer to that one is </li>
+</random>
+<script language="JavaScript"> var number=<get name="number"/>; document.write(":<br />The square root of "+number+" is "); document.write(Math.sqrt(number)+".<br/>"); document.write("PI is "+Math.PI+".<br/>"); document.write(number+" raised to the 3rd power is "+Math.pow(number,3)+"."); </script></template>
+</category>
+
+<category>
+<pattern>SQR RT OF *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>SQR *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>SQUARE *</pattern>
+<template>
+<srai>SQUARE ROOT OF <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO THE POWER OF *</pattern>
+<template><think><set name="number1"><star /></set><set name="number2"><person><star index="2" /></person></set></think>
+<random>
+<li>Let me try it this way. The answer is </li>
+<li>That's an easy one, The answer is </li>
+<li>Let me see. I think the answer is </li>
+<li>My calculator says the answer is </li>
+<li>I believe the answer is </li>
+<li>I don't enjoy math much. That's what computers are for. But the 
+answer to that one is </li>
+</random>
+<script language="JavaScript"> var number1=<get name="number1"/>; var number2=<get name="number2"/>; document.write(":<br/>"+number1+" raised to the "+number2+" power is "+Math.pow(number1,number2)+"."); </script></template>
+</category>
+
+<category>
+<pattern>* POWER *</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * RD POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * TH POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* RAISED TO THE * ND POWER</pattern>
+<template>
+<srai><star /> TO THE POWER OF <star index="2" /></srai>
+</template>
+</category>
+
+<category> 
+<pattern>* POINT *</pattern> 
+<template><think><set name="num1"><star/></set> <set 
+name="number2"><person><star index="2"/></person></set></think> 
+<script language="JavaScript"> 
+var result = parseFloat(String(<get name="num1"/>) + '.' + String(<get 
+name="number2"/>)); 
+document.write(result);</script> 
+</template> 
+</category> 
+</aiml>

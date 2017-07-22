@@ -1,0 +1,88 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<aiml>
+
+<category>
+    <pattern>MY EMAIL IS *</pattern>
+    <template>Alright, I will remember that. <think><set name="email"><denormalize><star/></denormalize></set></think></template>
+</category>
+
+<category>
+    <pattern>CALVIN S EMAIL IS *</pattern>
+    <template>Alright, I will remember that. <think><set name="email-1"><denormalize><star/></denormalize></set></think></template>
+</category>
+
+<category>
+    <pattern>JAMES EMAIL IS *</pattern>
+    <template>Alright, I will remember that. <think><set name="email-2"><denormalize><star/></denormalize></set></think></template>
+</category>
+
+<category>
+    <pattern>IZZY S S EMAIL IS *</pattern>
+    <template>Alright, I will remember that. <think><set name="email-3"><denormalize><star/></denormalize></set></think></template>
+</category>
+
+<category>
+    <pattern>GABY S EMAIL IS *</pattern>
+    <template>Alright, I will remember that. <think><set name="email-4"><denormalize><star/></denormalize></set></think></template>
+</category>
+
+<category>
+    <pattern>SEND EMAIL TO CALVIN</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-1"/>")</script></template>
+</category> 
+
+<category>
+    <pattern>SEND EMAIL TO JAMES</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-2"/>")</script></template>
+</category> 
+
+<category>
+    <pattern>SEND EMAIL TO IZZY</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-3"/>")</script></template>
+</category> 
+
+<category>
+    <pattern>SEND EMAIL TO GABY</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-4"/>")</script></template>
+</category> 
+ 
+<category>
+    <pattern>EMAIL * TO CALVIN</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-1"/>?body=<star/>")</script></template>
+</category> 
+
+<category>
+    <pattern>EMAIL * TO JAMES</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-2"/>?body=<star/>")</script></template>
+</category> 
+
+<category>
+    <pattern>EMAIL * TO IZZY</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-3"/>?body=<star/>")</script></template>
+</category> 
+
+<category>
+    <pattern>EMAIL * TO GABY</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-4"/>?body=<star/>")</script></template>
+</category>  
+<category>
+    <pattern>EMAIL CALVIN SUBJECT *</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-1"/>?subject=<star/>")</script></template>
+</category> 
+
+<category>
+    <pattern>EMAIL JAMES SUBJECT *</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-2"/>?subject=<star/>")</script></template>
+</category> 
+
+<category>
+    <pattern>EMAIL IZZY SUBJECT *</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-3"/>?subject=<star/>")</script></template>
+</category> 
+
+<category>
+    <pattern>EMAIL GABY SUBJECT *</pattern>
+    <template>Here you go: <script language="JavaScript">var x = window.open("mailto:<get name="email-4"/>?subject=<star/>")</script></template>
+</category>  
+
+</aiml>

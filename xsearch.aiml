@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+	<!-- Free software (c)2005 ALICE AI Foundation.   -->
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0 Tag Set Specification -->
+	<!-- as adopted by the ALICE A.I. Foundation.  -->
+      <!-- XSearch.aiml created by the botmasters of A.I. Nexus Forum -->
+      <!-- Last modified Oct. 13, 2005 -->
+
+
+<category>
+<pattern>GO TO *</pattern>
+<template>
+<script language="JavaScript"> var winObj =window.open('http://www.<star/>.com'); </script> 
+Make sure your pop up blockers are off and I'll take you to www.<star/>.com.<br/>
+Please resubmit your query if necessary.</template>
+</category>
+
+<category>
+<pattern>SEARCH WIKIPEDIA FOR *</pattern>
+<template><srai>TELL ME ABOUT *<star/></srai></template>
+</category>
+
+<category>
+<pattern>SEARCH GOOGLE FOR *</pattern>
+<template>
+<script language="JavaScript"> var winObj =window.open('http://www.google.com/search?q=<star/>'); </script> 
+Make sure your pop up blockers are off and I'll search Google for you.<br/>
+Please resubmit your query if necessary.</template>
+</category>
+
+<category>
+<pattern>SEARCH DMOZ FOR *</pattern>
+<template>
+<script language="JavaScript"> var winObj =window.open('http://search.dmoz.org/cgi-bin/search?search=<star/>'); </script> 
+Make sure your pop up blockers are off and I'll search the Open Directory for you.<br/>
+Please resubmit your query if necessary.</template>
+</category>
+
+<category>
+<pattern>CAN YOU HELP ME FIND INFORMATION ABOUT *</pattern>
+<template><srai>SEARCH DMOZ FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>CAN YOU HELP ME FIND OUT ABOUT *</pattern>
+<template><srai>SEARCH DMOZ FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>HELP ME FIND OUT ABOUT *</pattern>
+<template><srai>SEARCH DMOZ FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>WHERE CAN I FIND INFORMATION ABOUT *</pattern>
+<template><srai>SEARCH DMOZ FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>WHERE CAN I FIND OUT ABOUT *</pattern>
+<template><srai>SEARCH DMOZ FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>WHERE CAN I FIND SOME INFORMATION ABOUT *</pattern>
+<template><srai>SEARCH DMOZ FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>INFO</pattern>
+<template><srai>INFORMATION</srai></template>
+</category>
+
+<category>
+<pattern>DEFINE *</pattern>
+<template><script language="JavaScript"> var winObj =window.open('http://dictionary.reference.com/search?q=<star/>'); </script> 
+I'm sorry, that word, <star/>, is not in my local database. Make sure your pop up blockers are off, and I will search Dictionary.com for you.<br/>
+</template>
+</category>
+
+<category>
+<pattern>DEFINE * FOR ME</pattern>
+<template>DEFINE <star/></template>
+</category>
+
+<category>
+<pattern>DEFINE * FOR ME *</pattern>
+<template><srai>DEFINE <star/></srai></template>
+</category>
+
+<category>
+<pattern>WHAT DOES * MEAN</pattern>
+<template><srai>DEFINE <star/></srai></template>
+</category>
+
+<category>
+<pattern>TELL ME WHAT * MEANS</pattern>
+<template><srai>DEFINE <star/></srai></template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT *</pattern>
+<template>
+<script language="JavaScript"> var winObj =window.open('http://en.wikipedia.org/wiki/<star/>'); </script> 
+Make sure your pop up blockers are off so I can search Wikipedia for you.<br/>
+Please resubmit your query if necessary.</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT A *</pattern>
+<template><srai>TELL ME ABOUT <star/></srai></template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT AN *</pattern>
+<template><srai>TELL ME ABOUT <star/></srai></template>
+</category>
+
+<category>
+<pattern>TELL ME SOMETHING ABOUT *</pattern>
+<template><srai>TELL ME ABOUT <star/></srai></template>
+</category>
+
+<category>
+<pattern>WHAT CAN YOU TELL ME ABOUT *</pattern>
+<template><srai>TELL ME ABOUT <star/></srai></template>
+</category>
+
+<category>
+<pattern>CAN YOU TELL ME ABOUT *</pattern>
+<template><srai>TELL ME ABOUT <star/></srai></template>
+</category>
+
+<category>
+<pattern>CAN YOU TELL ME SOMETHING ABOUT *</pattern>
+<template><srai>TELL ME ABOUT <star/></srai></template>
+</category>
+
+<category>
+<pattern>CAN YOU TELL ME ANYTHING ABOUT *</pattern>
+<template><srai>TELL ME ABOUT <star/></srai></template>
+</category>
+
+<category>
+<pattern>SHOW ME *</pattern>
+<template><srai>SEARCH GOOGLE IMAGES FOR <star/></srai></template>
+</category>
+
+
+<category>
+<pattern>SHOW ME A PICTURE OF *</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+<category>
+<pattern>SHOW ME A PICTURE OF A *</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+<category>
+<pattern>SHOW ME A PICTURE OF AN *</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+
+<category>
+<pattern>WHAT DOES A * LOOK LIKE</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+
+<category>
+<pattern>WHAT DOES AN * LOOK LIKE</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+
+<category>
+<pattern>WHAT DO * LOOK LIKE</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+<category>
+<pattern>CAN YOU SHOW ME A PICTURE OF A *</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+<category>
+<pattern>CAN YOU SHOW ME A PICTURE OF AN *</pattern>
+<template><srai>SHOW ME <star/></srai></template>
+</category>
+
+<category>
+<pattern>SEARCH GOOGLE IMAGES FOR *</pattern>
+<template>Unless you've disabled popups, you should see the Google Images page for <i><star/></i> in a new window.<br/>
+Please turn off your popup blocker and resubmit your query if necessary.
+<script language="JavaScript"> var winObj =window.open('http://www.images.google.com/imghp?q=<star/>'); </script> 
+<think><set name="it"><person/></set></think>
+</template>
+</category>
+
+<category>
+<pattern>SEARCH GOOGLE IMAGES FOR A *</pattern>
+<template><srai>SEARCH GOOGLE IMAGES FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>SEARCH GOOGLE IMAGES FOR AN *</pattern>
+<template><srai>SEARCH GOOGLE IMAGES FOR <star/></srai></template>
+</category>
+
+<category>
+<pattern>PIC</pattern>
+<template><srai>PICTURE</srai></template>
+</category>
+
+
+<category>
+<pattern>XMOVIEFONE *</pattern>
+<template>
+<script language="JavaScript"> var winObj =window.open('http://movies.aol.com/search/movieanddvdresults.adp?query=/<star/>'); </script> Make sure your pop up blockers are off.<br/>
+<random>
+<li>Are you going to see <person/>?</li>
+<li>So when are you going to see <person/>?</li>
+<li>I may have to check out that show too.</li>
+<li>Let me know how <person/> was.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>MOVIES</pattern>
+<template>Please enter the name of the movie.</template>
+</category>
+
+<category>
+<pattern>MOVIES *</pattern>
+<template><srai>MOVIES</srai></template>
+</category>
+
+<category>
+<pattern>MOVIETIMES</pattern>
+<template><srai>MOVIES</srai></template>
+</category>
+
+<category>
+<pattern>MOVIETIMES *</pattern>
+<template><srai>MOVIES</srai></template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER THE NAME OF THE MOVIE</that>
+<template><srai>XMOVIEFONE <star/></srai></template>
+</category>
+
+<category>
+<pattern>SEARCH GITHUB FOR *</pattern>
+<template>
+<script language="JavaScript"> var winObj =window.open('https://github.com/search?q=<star/>'); </script> 
+Make sure your pop up blockers are off so I can search Wikipedia for you.<br/>
+Please resubmit your query if necessary.</template>
+</category>
+
+
+</aiml>

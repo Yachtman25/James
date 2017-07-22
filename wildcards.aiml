@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ 
+ <!--Name -->
+ 
+  <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>Hello, <star/>.</template>
+  </category>
+  
+  <category>
+      <pattern>I AM *</pattern>
+      <template>Hello <star/>.</template>
+  </category>
+  
+  <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>Nice to meet you, <set name="name"><star/></set></template>
+  </category>
+  
+  <category>
+      <pattern>WHAT IS MY NAME</pattern>
+      <template>Your name is <get name="name"/>.</template>
+  </category>
+    
+    
+ <!--Suicide -->
+    
+  <category>
+      <pattern>^ SUICIDE ^</pattern>
+      <template><srai>I WANT TO KILL MYSELF</srai></template>
+  </category>
+ 
+  <category>
+      <pattern>^ SUICIDAL ^</pattern>
+      <template><srai>I WANT TO KILL MYSELF</srai></template>
+  </category>
+  
+  
+ <category>
+      <pattern>* SUICIDE *</pattern>
+      <template><srai>I WANT TO KILL MYSELF</srai></template>
+  </category>
+  
+</aiml>

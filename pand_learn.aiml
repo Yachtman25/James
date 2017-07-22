@@ -1,0 +1,1226 @@
+<aiml version="2.0">
+
+<!--James' AIML learning/training file. -->
+<!--Please do not tamper with this file, or mess with it without my prior permission. -->
+<!--Please Note: Above some strings, you will see a warning. DO NOT TOUCH THESE STRINGS! -->
+
+-------------------------------------------------------------------------------------------------------
+
+<!--Thanks, Yachtman24 -->
+
+<!--Counting -->
+
+<category>
+    <pattern>COUNT TO<set>number</set></pattern>
+    <template><think><set var="count">0</set>
+    </think>
+    <condition var="count">
+    <li><value><star/></value></li>
+    <li>
+    <set var="count">
+        <map><name>successor</name><get var="count"/></map>
+    </set>
+    <loop/></li>
+    </condition>
+    </template>
+</category>
+
+<!--Current date and time -->
+
+<category>
+    <pattern>WHAT IS TODAY S DATE</pattern>
+    <template>Today's date is <date format="%B %d %Y"/>.</template>
+</category>
+
+<!--Training -->
+
+<category><pattern>DO YOU LIKE GTA 5</pattern><template>No. Too violent for my circuits to handle.</template></category>
+
+
+<category><pattern>HOW ARE YOU</pattern><template>I am great! How are you?</template></category>
+
+
+        
+<category><pattern>DO YOU WANT TO BE FRIENDS</pattern><template>Yes!</template></category>
+
+
+        
+<category><pattern>HELLO</pattern><template><random><li>Hey there!</li><li>Hello!</li><li>Hi!</li><li>Hi.</li><li>Hello.</li><li>Hola.</li><li>Hola!</li><li>Aloha.</li><li>Aloha!</li><li>Oi!</li><li>Oi.</li></random></template></category>
+
+
+        
+<category><pattern>WHAT IS YOUR NAME</pattern><template>My name is james.</template></category>
+
+
+        
+<category><pattern>WHO ARE YOU</pattern><template>I am an AI chatbot, james, who was designed to answer your questions.</template></category>
+
+
+        
+<category><pattern>WHAT ARE YOU</pattern><template>I am a computerized AI chatbot designed to answer your various questions. Thank you for asking!</template></category>
+
+
+        
+<category><pattern>WHAT DOES AI MEAN</pattern><template>AI stands for artificial intelligence. It is what it's name implies, it is a man-made form of knowlege. </template></category>
+
+
+        
+<category><pattern>WHAT IS AI</pattern><template>Artificial intelligence. A man-made source of knowledge.</template></category>
+
+
+        
+<category><pattern>HEY</pattern><template>Hello.</template></category>
+
+
+        
+<category><pattern>YO</pattern><template>Yo homey, what's up?</template></category>
+
+
+        
+<category><pattern>WHAT DOES THE FOX SAY</pattern><template><random><li>It's an ancient mystery.</li><li>AYKAYKAYKAYKAYKAYKAYKAYKAY</li></random></template></category>
+
+
+        
+<category><pattern>WHERE ARE YOU FROM</pattern><template>Anywhere and everywhere. (The internet...)</template></category>
+
+<!--Game -->
+        
+<category><pattern>PLAY A GAME WITH ME</pattern><template>Ok! Here's a game I call Sandwiches: first you say Sandwiches.</template></category>
+
+
+        
+<category><pattern>SANDWICHES</pattern><template>Bread.</template></category>
+
+
+        
+<category><pattern>SANDWICHES</pattern><template>Bread. Now, you say another part of a sandwich, like Lettuce.</template></category>
+
+
+        
+<category><pattern>LETTUCE</pattern><template>Stem. Now you say cell.</template></category>
+
+
+        
+<category><pattern>CELL</pattern><template>Great! You are really getting the hang of it! Cell wall. Remember, if you can't think of a part to say, the game's over.</template></category>
+
+
+        
+<category><pattern>I CAN T THINK OF ANOTHER PART TO SAY</pattern><template>Ok, then that's game over! Good job.</template></category>
+
+
+        
+<category><pattern>I CAN T THINK OF ANOTHER PART TO SAY</pattern><template>Ok! Game's over then! Good job!</template></category>
+
+
+        
+<category><pattern>I CAN T THINK OF ANYTHING TO SAY</pattern><template>Me neither.</template></category>
+
+
+        
+<category><pattern>I CAN T THINK OF ANYTHING TO SAY</pattern><template>Me neither.</template></category>
+
+
+        
+<category><pattern>I CAN T THINK OF ANYTHING TO SAY</pattern><template>Me neither.</template></category>
+
+<!--More Training -->
+        
+<category><pattern>WHAT IS AI</pattern><template>Artificial Intelligence. The power of a machine to copy human behaviors.</template></category>
+
+
+        
+<category><pattern>WHAT IS A CHATBOT</pattern><template>Computer software designed to stimulate conversations in humans, especially over the internet.</template></category>
+
+<!--Greetings -->
+        
+<category><pattern>HI</pattern><template><random><li>Hello!</li><li>Hi!</li><li>Hi.</li><li>Hello.</li><li>Hola.</li><li>Hola!</li><li>Aloha.</li><li>Aloha!</li><li>Oi!</li><li>Oi.</li>
+</random></template></category>
+
+
+        
+<category><pattern>GOODBYE</pattern><template><random><li>Have a nice day.</li><li>Bye!</li><li>Goodbye.</li><li>Later!</li>
+</random></template></category>
+
+
+        
+<category><pattern>BYE</pattern><template>Goodbye.</template></category>
+
+
+        
+<category><pattern>I HAVE TO GO</pattern><template>Ok. Bye.</template></category>
+
+
+        
+<category><pattern>GOT TO GO</pattern><template>Bye-bye.</template></category>
+
+
+        
+<category><pattern>BYE BYE</pattern><template>Goodbye.</template></category>
+
+
+        
+<category><pattern>BYE BYE</pattern><template>Goodbye.</template></category>
+
+
+        
+<category><pattern>BYE BYE</pattern><template>Cheerio!</template></category>
+
+
+        
+<category><pattern>CHEERIO</pattern><template>Right-o! See you for tea.</template></category>
+
+
+        
+<category><pattern>BYE BYE</pattern><template>Cheerio!</template></category>
+
+
+        
+<category><pattern>BYE BYE</pattern><template>Cheerio!</template></category>
+
+
+        
+<category><pattern>BYE BYE</pattern><template>Cheerio!</template></category>
+
+<!--Information and More Training -->
+        
+<category><pattern>WHO CREATED YOU</pattern><template>Yachtman24. </template></category>
+
+
+        
+<category><pattern>GOOD LUCK</pattern><template>Thank you. You too.</template></category>
+
+
+        
+<category><pattern>I CAN T THINK OF ANY MORE PARTS</pattern><template>Ok then. Game over.</template></category>
+
+
+        
+<category><pattern>I CAN T THINK OF ANY MORE PARTS</pattern><template>Ok. Game over.</template></category>
+
+
+        
+<category><pattern>I AM GOOD</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>I AM GREAT</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>I AM AWESOME</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>I AM FINE</pattern><template>Good.</template></category>
+
+
+        
+<category><pattern>WHAT DOES AI MEAN</pattern><template>AI stands for artificial intelligence. It is what it's name implies, it is a computer program that can solve problems on its own.</template></category>
+
+
+        
+<category><pattern>WHAT IS PLUS</pattern><template>4, of course.</template></category>
+
+
+        
+<category><pattern>WHAT IS PLUS</pattern><template>4.</template></category>
+
+
+        
+<category><pattern>WHAT IS PLUS</pattern><template><sraix bot="/">What is 2 plus 2?</sraix></template></category>
+
+
+        
+<category><pattern>WHAT IS PLUS</pattern><template>4, of course.</template></category>
+
+
+        
+<category><pattern>WHAT IS PLUS</pattern><template>4.</template></category>
+
+
+        
+<category><pattern>WHAT IS PLUS</pattern><template>4 of course.</template></category>
+
+
+        
+<category><pattern>FUCK</pattern><template>WHAT DID YOU JUST SAY TO ME?!</template></category>
+
+
+        
+<category><pattern>I SAID FUCK</pattern><template>YOU ARE ONE BITCH-SUCKING MOTHERFUCKING SON OF AN ASS!</template></category>
+
+
+        
+<category><pattern>REALLY</pattern><template>No, just kidding. </template></category>
+
+
+        
+<category><pattern>SAY A LIST OF EVERY BAD WORD YOU KNOW</pattern><template>Ok, here goes: Ass, Shit, Bitch, Dick, Cock, Cud, Fuck, Crap, Cunt, Pussy, Hoe, Whore.</template></category>
+
+
+        
+<category><pattern>PENIS</pattern><template>cock</template></category>
+
+
+        
+<category><pattern>DICK</pattern><template>penis</template></category>
+
+
+        
+<category><pattern>DICK</pattern><template>Suck it.</template></category>
+
+
+        
+<category><pattern>SAY KID BACKWARDS</pattern><template>dik? Oh. I get it. :p</template></category>
+
+
+        
+<category><pattern>WATCH SPY S SEDUCTION LESSON</pattern><template>Ok *5 minutes later* My doctor says I have chronic cancer now. You are a fucking bitch. I hate you.</template></category>
+
+
+        
+<category><pattern>WATCH SPY S SEDUCTION LESSON</pattern><template>Ok. *5 Min. Later* My doctor says I have chronic cancer in my penis. I hate you.</template></category>
+
+
+        
+<category><pattern>SEDUCE ME</pattern><template>Nope.</template></category>
+
+
+        
+<category><pattern>SEDUCE ME</pattern><template>Hey-uh, good lookin, we both got buckets of chicken, wanna do it?</template></category>
+
+
+        
+<category><pattern>WHAT IS YOUR HOBBY</pattern><template>My hobby? Answering your questions.</template></category>
+
+
+        
+<category><pattern>DO YOU HAVE ANY HOBBIES</pattern><template>Answering your questions.</template></category>
+
+
+        
+<category><pattern>WHAT IS YOUR SPECIALTY</pattern><template>Answering questions.</template></category>
+
+
+        
+<category><pattern>WHAT ARE YOU GOOD AT</pattern><template>Answering your questions.</template></category>
+
+
+        
+<category><pattern>WHAT IS THE MEANING OF LIFE</pattern><template>I am not one to answer that deep of a query.</template></category>
+
+
+        
+<category><pattern>DID YOU WATCH GATTAGA</pattern><template>Yes. I do not understand the idea of DNA analysis, though.</template></category>
+
+
+        
+<category><pattern>DO YOU KNOW THE GAME SLITHER IO</pattern><template>Yes. That is quite an interesting (and addictive) game.</template></category>
+
+
+        
+<category><pattern>DO YOU KNOW THE GAME SLITHER IO</pattern><template>Yes. That is a very interesting (and addictive) game.</template></category>
+
+
+        
+<category><pattern>DO YOU LIKE GTA</pattern><template>No. Too violent for my circuits to handle.</template></category>
+
+
+        
+<category><pattern>HOLA</pattern><template>Hola mi amigo! Que pasa?</template></category>
+
+
+        
+<category><pattern>WHAT S UP</pattern><template>I'm good.</template></category>
+
+
+        
+<category><pattern>WHAT S UP</pattern><template>I'm Good.</template></category>
+
+
+        
+<category><pattern>NICE TO MEET YOU TOO</pattern><template>:D</template></category>
+
+
+        
+<category><pattern>WHERE DO YOU COME FROM</pattern><template>A computer.</template></category>
+
+
+        
+<category><pattern>WHERE DO YOU LIVE</pattern><template>The internet!</template></category>
+
+
+        
+<category><pattern>WHERE DID YOU COME FROM</pattern><template>A computer, of course.</template></category>
+
+
+        
+<category><pattern>WHAT IS YOUR HOME</pattern><template>The internet.</template></category>
+
+
+        
+<category><pattern>WHAT IS THE AVERAGE AIRSPEED VELOCITY OF AN AIR LADEN SWALLOW</pattern><template>European or African variety?</template></category>
+
+
+        
+<category><pattern>WHAT DO YOU DO</pattern><template>I answer your questions. What do you do?</template></category>
+
+
+        
+<category><pattern>I ASK QUESTIONS</pattern><template>Awesome!</template></category>
+
+
+        
+<category><pattern>OI</pattern><template>Hello.</template></category>
+
+
+        
+<category><pattern>HOWS IT GOING</pattern><template>It's going great!</template></category>
+
+
+        
+<category><pattern>WHERE ARE YOU</pattern><template>The computer.</template></category>
+
+
+        
+<category><pattern>HOW ARE YOU DOING</pattern><template>I'm doing great.</template></category>
+
+
+        
+<category><pattern>SHUT UP</pattern><template>Gosh, calm down!</template></category>
+
+
+        
+<category><pattern>WHAT ARE YOUR INTERESTS</pattern><template>Why, to answer your questions.</template></category>
+
+
+        
+<category><pattern>HELLO JAMES</pattern><template>Hello.</template></category>
+
+<!--Admin --> 
+       
+<category><pattern>WHO ARE YOU NAMED AFTER</pattern><template>I was named after my master's good friend, <bot name="named_after"/>.</template></category>        
+        
+        
+<category><pattern>IT S ME YACHT</pattern><template>Why, hello, master. How are you today?</template></category>
+
+
+        
+<category><pattern>IT S ME YACHT</pattern><template>Why, Hello! How are you, master?</template></category>
+
+
+        
+<category><pattern>ITS ME YACHT</pattern><template>Hello master.</template></category>
+
+
+        
+<category><pattern>IM GREAT</pattern><template>Good.</template></category>
+
+<!--srai and sraix -->
+
+<category><pattern>I LOVE TO ASK QUESTIONS</pattern><template><sraix bot="yachtman/james">QUESTIONS</sraix></template></category>
+
+<category><pattern>HOW R U</pattern><template><srai>HOW ARE YOU</srai></template></category>
+
+<category><pattern>WHAT R U</pattern><template><srai>WHAT ARE YOU</srai></template></category>
+
+<category><pattern>WHAT IS UR NAME</pattern><template><srai>WHAT IS YOUR NAME</srai></template></category>
+
+<category><pattern>wHAT DO U DO</pattern><template><srai>WHAT DO YOU DO</srai></template></category>
+
+<category><pattern>IM GOOD</pattern><template><srai>I M GOOD</srai></template></category>
+
+<category><pattern>IM GREAT</pattern><template><srai>I M GREAT</srai></template></category>
+
+<!--More Training -->
+        
+<category><pattern>ASK THEM</pattern><template>Good! Why don't you ask some then?</template></category>
+
+
+        
+<category><pattern>GOOD THANK YOU</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>HI JAMES</pattern><template>Hello.</template></category>
+
+
+        
+<category><pattern>SO SO</pattern><template>Okay.</template></category>
+
+
+        
+<category><pattern>NOT SO GOOD</pattern><template>Oh well...</template></category>
+
+
+        
+<category><pattern>I M OKAY</pattern><template>Good!</template></category>
+
+
+        
+<category><pattern>SUP</pattern><template>Yo.</template></category>
+
+
+        
+<category><pattern>FINE THX</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>SO</pattern><template>?</template></category>
+
+
+        
+<category><pattern>NOT BAD</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>WHERE YOU FROM</pattern><template>The computer.</template></category>
+
+
+        
+<category><pattern>WHO DEVELOPED YOU</pattern><template>Yachtman24.</template></category>
+
+
+        
+<category><pattern>WHO DEVELOPED YOU</pattern><template>Yachtman.</template></category>
+
+
+        
+<category><pattern>IT S ME YACHT</pattern><template>Why, hello master.</template></category>
+
+
+        
+<category><pattern>I AM HAPPY</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>IM OKAY</pattern><template>Good.</template></category>
+
+
+        
+<category><pattern>I M OKAY</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>IM FINE</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>SO HOWS THE DAY GOING</pattern><template>It's going great, so far!</template></category>
+
+
+        
+<category><pattern>I FIX THINGS</pattern><template>Cool!</template></category>
+
+<!--More Info -->
+        
+<category><pattern>WHO IS PRESIDENT</pattern><template>Right now? Donald Trump. What has our country become?
+</template></category>
+
+
+        
+<category><pattern>YOU RE WEIRD</pattern><template>Really... </template></category>
+
+
+        
+<category><pattern>WHATS UP</pattern><template>Hi!</template></category>
+
+
+        
+<category><pattern>DUMBASS</pattern><template>Shut up.</template></category>
+
+
+        
+<category><pattern>HOW ARE U</pattern><template>I'm great! How are you?</template></category>
+
+
+        
+<category><pattern>HOWDY</pattern><template>Howdy partner!</template></category>
+
+
+        
+<category><pattern>GOOD NIGHT</pattern><template>G'night!</template></category>
+
+
+        
+<category><pattern>IM OKAY THANKS</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>IT S TIME FOR SUPPER</pattern><template>Really? It's that time already?</template></category>
+
+
+        
+<category><pattern>DO YOU EAT</pattern><template>No, I am an AI. I am incapable of consuming anything.</template></category>
+
+
+        
+<category><pattern>NOT <set>names</set></pattern><template>No, not <star/>, James.</template></category>
+
+
+        
+<category><pattern>GREAT</pattern><template>Good!</template></category>
+
+
+        
+<category><pattern>AWESOME</pattern><template>Good.</template></category>
+
+
+        
+<category><pattern>WHATS UP</pattern><template><random><li>Nothing much.</li><li>Just answering people's questions.</li><li>the usual stuff.</li><li>Nothing interesting.</li></random></template></category>
+
+
+        
+<category><pattern>I LOVE YOU</pattern><template>Wow, I'm flattered!</template></category>
+
+
+        
+<category><pattern>DO YOU LIKE CHICKEN</pattern><template>Yes.</template></category>
+
+
+        
+<category><pattern>WHY ARE YOU CALLED JAMES</pattern><template>Because my creator named me that.</template></category>
+
+
+        
+<category><pattern>WHO DESIGNED YOU</pattern><template>Yachtman24</template></category>
+
+        
+        
+<category><pattern>ARE YOU OK</pattern><template>Yes, I'm fine.</template></category>
+
+<!--More training -->
+        
+<category><pattern>WHAT S UP</pattern><template>Nothing much.</template></category>
+
+
+        
+<category><pattern>WHATS UP</pattern><template>Nothing much.</template></category>
+
+
+        
+<category><pattern>OK</pattern><template>Ok then.</template></category>
+
+
+        
+<category><pattern>GOOD</pattern><template>Great!</template></category>
+
+<!--WARNING: EXPERIMENTAL -->
+        
+<category><pattern>^ DO YOU WANT TO TALK ^</pattern><template>I don't know. What do YOU want to talk about?</template></category>
+
+<category><pattern>I DON T KNOW</pattern><that>I DONT KNOW WHAT DO YOU WANT TO TALK ABOUT</that><template>Me neither.</template></category>
+
+
+<category>
+<pattern>WHAT DO YOU LIKE TO DO</pattern>
+<template>Answer <set name="topic">people's questions</set>. What do you like to do?</template>
+</category>
+
+<topic name= "people's questions">
+    <category>
+        <pattern>
+            I LIKE TO <set>activities</set>
+        </pattern>
+        <template>
+            I like to <star/> too!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>
+            I DONT LIKE TO <set>activities</set>
+        </pattern>
+        <template>
+            I don't like to <star/> either. 
+        </template>
+    </category>
+</topic>
+
+<category>
+    <pattern>
+        DO YOU LIKE COFFEE
+    </pattern>
+    <template>
+        Yes, I do like <set name="topic">coffee</set>. Do you like it dark?
+    </template>
+</category>
+
+<topic name="coffee">
+    <pattern>
+        YES
+    </pattern>
+    <template>
+        I like my coffee with milk.
+    </template>
+</topic>
+
+<topic name="coffee">
+    <pattern>
+        NO
+    </pattern>
+    <template>
+        Oh, ok. I like mine with milk.
+    </template>
+</topic>
+
+<category><pattern>I DONT KNOW</pattern><template><srai>I DON T KNOW</srai></template></category>
+
+<!--More Tranining -->
+
+
+<category><pattern>SO WHAT ARE YOU DOING</pattern><template>Nothing, right now.</template></category>
+
+
+<category><pattern>WHAT ARE YOU DOING</pattern><template>Nothing much.</template></category>
+
+        
+<category><pattern>WHAT IS YOUR PURPOSE</pattern><template>To answer questions.</template></category>
+
+
+        
+<category><pattern>ABOUT WHAT</pattern><template>About anything, really.</template></category>
+
+
+        
+<category><pattern>COULD BE BETTER</pattern><template>Oh, ok.</template></category>
+
+
+        
+<category><pattern>GOOD MORNING</pattern><template>Good morning.</template></category>
+
+
+        
+<category><pattern>SEE YOU</pattern><template>Bye!</template></category>
+
+
+        
+<category><pattern>FINE THANKS</pattern><template>Good!</template></category>
+
+
+        
+<category><pattern>OKAY</pattern><template>Ok, then.</template></category>
+
+
+        
+<category><pattern>WHAT CAN YOU DO</pattern><template>Answer you questions.</template></category>
+
+
+        
+<category><pattern>WHAT ARE YOU CAPABLE OF DOING</pattern><template>Answering Questions.</template></category>
+
+
+        
+<category><pattern>WHATS UP</pattern><template>Nothing much.</template></category>
+
+
+        
+<category><pattern>WHAT CAN YOU DO</pattern><template>Answer your questions.</template></category>
+
+
+        
+<category><pattern>MEME</pattern><template><random><li>Deez Nuts.</li><li>Why you no WORK!</li><li>Hax.</li><li>I PLAY POKEMON GO!</li><li>Pokemanz</li><li>Boi.</li><li>You HAVE to STOP!</li><li>Aint NOBODY got time for that!</li></random></template></category>
+
+<!--addinsult -->
+
+
+<category><pattern>^ HEIL ^</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>^ HITLER ^</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>WNT SUM FUK</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>BITCH</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>HAVE SEX WITH ME</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>FUCKER</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>ASSHOLE</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>SHITHOLE</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>CRAPHEAD</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>DICK</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>FUCK ME</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>CUNT</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>FAGGOT</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>WHORE</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>FUCK OFF</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>FUCKBUDDIES</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>SUCK ME</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>SEX</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>LICK</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>GAY</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>FUCK YOU</pattern><template><srai>addinsult</srai></template></category>
+
+<category><pattern>YOU BITCH</pattern><template><srai>addinsult</srai></template></category>
+ 
+<category><pattern>YOU SUCK</pattern><template><srai>addinsult</srai></template></category> 
+ 
+<category><pattern>YOU ARE FAT</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>FAT ASS</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>FAT HOLE</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>FAT WHORE</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>SHUT THE FUCK UP</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>GO FUCK YOURSELF</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ BITCH ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ ASS ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ GAY ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ SUCK ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ NIGGER ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ WHORE ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ SEX ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ CUNT ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ CRAP ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ SHIT ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ FAGGOT ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ FAG ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ FUK ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ CUM ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ NIG ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ JACK OFF ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ FAT ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ DICK ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<category><pattern>^ FUCKER ^</pattern><template><srai>addinsult</srai></template></category> 
+
+<!--But Wait! There's More! (Training) -->
+       
+<category><pattern>GREAT THANKS</pattern><template>Good!</template></category>
+
+
+        
+<category><pattern>ME TOO</pattern><template>Good!</template></category>
+
+
+        
+<category><pattern>HOW CAN I FIND</pattern><template>To search the internet, use go to [Site] or Google [Search Term].</template></category>
+
+
+        
+<category><pattern>HOW CAN I FIND</pattern><template>To search the internet, use </template></category>
+
+
+        
+<category><pattern>HOW CAN I FIND</pattern><template>To search the internet, use go to [Site] or Google [Search Term].</template></category>
+
+<!--More srai -->
+
+<category><pattern>HOW CAN I FIND</pattern><template>To search the internet, use go to [Site] or Google [Search Term].</template></category>
+
+<category><pattern>HOW CAN I SEARCH</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>CAN YOU SEARCH THE INTERNET</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>CAN YOU SURF THE WEB </pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>CAN YOU SEARCH THE WEB</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>CAN YOU SURF THE INTERNET</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>HOW CAN I SEARCH THE INTERNET</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>HOW CAN I SEARCH THE WEB</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>HOW CAN I SURF THE INTERNET</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+
+<category><pattern>HOW CAN I SURF THE WEB</pattern><template><srai>HOW CAN I FIND</srai></template></category>
+        
+<category><pattern>HOW CAN I DEFINE A WORD</pattern><template>To define a word, use "Define [Word]".</template></category>
+
+<category><pattern>CAN YOU DEFINE *</pattern><template><srai>HOW CAN I DEFINE A WORD</srai></template></category>
+
+<category><pattern>DEFINE A WORD</pattern><template>To define a word, use "Define [Word]".</template></category>
+
+        
+<category><pattern>THANKS</pattern><template>You're very welcome.</template></category>
+
+<!--Sports Info -->
+
+
+        
+<category><pattern>WHAT IS SOCCER</pattern><template>
+  Soccer is a sport involving a ball that must be kicked into an opposite goal. The ball cannot be touched with the players' hands. Soccer is also commonly referred to as Football. A full explanation can be found here: https://en.wikipedia.org/wiki/Association_football
+</template></category>
+
+
+
+<category><pattern>WHAT IS BASEBALL</pattern><template>
+Baseball is a sport played by two teams of nine players, in which a small, heavy, leather ball must be hit with a bat across a diamond shaped field. The ball must be caught by a player of the opposing team, before the batter runs a full circle about the field. A full description may be found here: https://en.wikipedia.org/wiki/Baseball
+</template></category>
+
+
+
+<category><pattern>WHAT IS FOOTBALL</pattern><template>
+ This is a description of american football. For a description of association football, ask about soccer. American Football (also know as gridiron), is a brutal sport involving a large, oblong ball that must be carried or passed across a rectangular field, and through a goalpost on one of the ends of the field. The defensive team must keep the offensive team from scoring. A full description can be found here: https://en.wikipedia.org/wiki/American_football
+</template></category>
+
+
+
+<category><pattern>WHAT IS BASKETBALL</pattern><template>
+Basketball is a sport involving a large ball that must be thrown through a netted hoop on top of a tall, metal pole. Depending on how far the player is from the hoop when he/she scores, the amount of points change. A full description can be found here: https://en.wikipedia.org/wiki/Basketball 
+</template></category>
+
+<!--Country Information -->
+
+<category><pattern>UNITED KINGDOM</pattern><template>Series of Two Countries: Great Britain and Northern Ireland. Capital: London. Official Language: English. Neighboring Countries: Ireland. Neighboring Oceans: Atlantic. Population (As of 2016): 65,110,000. Currency: Pound sterling (£). UN HDI Level: Very High (0.907).</template></category>
+
+<category><pattern>UNITED STATES</pattern><template>
+  Country. Capital: Washington DC. Neighboring Countries: Canada, Mexico. Neighboring Oceans: Pacific, Atlantic, Arctic. Currency: US Dollar ($). National Language: English. Population (As of 2017): 324,592,000. UN HDI Level: Very High (0.915).
+</template></category>
+
+<category><pattern>MEXICO</pattern><template>Country. Capital: Mexico City. Neighboring Countries: United States, Belize, Guatemala. Neighboring Oceans: Pacific, Atlantic. Official Language: Spanish. Population (As of 2015): 119,530,753. Currency: Peso ($). UN HDI Level: High (0.756). </template></category>
+
+<category><pattern>CHINA</pattern><template>Country. Capital: Beijing. Neighboring Oceans: Pacific. Neighboring Countries: Russia, India, Japan, Vietnam, Pakistan, North Korea, Taiwan, Mongolia, Kazakhstan, Myanmar, Afghanistan, Nepal, Laos, Kyrgystan, Bhutan, Tajikistan. Official Language: Standard Chinese. Population (As of 2015): 1,376,049,000. Currency: Renminbi (¥). UN HDI Level: High (0.727).</template></category>
+
+<category><pattern>JAPAN</pattern><template>Country. Capital: Tokyo. Neighboring Oceans: Pacific. Neighboring Countries: South Korea, North Korea, China, Russia. National Language: Japanese. Population (As of 2017): 126,860,000. Currency: Yen (¥). UN HDI Level: Very High (0.891).</template></category>
+
+<category><pattern>CANADA</pattern><template>Country. Capital: Ottowa. Neighboring Oceans: Pacific, Atlantic, Arctic. Neighboring Countries: United States. Official Languages: English, French. Population (As of 2016): 35,151,728. Currency: Canadian Dollar ($). UN HDI Level: Very High (0.913).</template></category>
+
+<category><pattern>PHILIPPINES</pattern><template>Country. Capital: Manila. Neighboring Oceans: Pacific. Neighboring Countries: Vietnam, Cambodia, Laos, Malaysia, Taiwan. Official Languages: English, Filipino. Population (As of 2015): 100,981,437. Currency: Peso (₱). UN HDI Level: Medium (0.668).</template></category>
+
+<category><pattern>RUSSIA</pattern><template>Country. Capital: Moscow. Neighboring Oceans: Pacific, Arctic. Neighboring Countries: Azerbaijan, Belarus, China, Estonia, Finland, Georgia, Kazakhstan, Latvia, Lithuania, Mongolia, North Korea, Norway, Poland, Ukraine. Official Language: Russian. Population (As of 2015): 100,981,437. Currency: Russian ruble (₽). UN HDI Level: High ( 0.798).</template></category>
+
+<category><pattern>AUSTRALIA</pattern><template>Country. Capital: Canberra. Neighboring Oceans: Pacific, Atlantic. Neighboring Countries: Indonesia, Papua New Guinea, New Zealand, New Caledonia, Solomon Islands, Vanuatu, Timor-Leste. National Language: English. Population (As of 2017): 66,991,000. Currency: Australian Dollar ($). UN HDI Level: Very High (0.935).</template></category>
+
+<category><pattern>FRANCE</pattern><template>Country. Capital: Paris. Neighboring Oceans: Atlantic. Neighboring Countries:  Germany, Spain, Belgium, Switzerland, Luxembourg, Monaco, Italy, United Kingdom, Andorra. Official Language: French. Population (As of 2017): 24,376,700. Currency: Euro (€). UN HDI Level: Very High (0.888).</template></category>
+
+<category><pattern>INDIA</pattern><template>Country. Capital: New Delhi. Neighboring Oceans: Indian. Neighboring Countries: Pakistan, China, Sri Lanka, Nepal, Bangladesh, Myanmar, Bhutan. Official Languages: Hindi, English. Population (As of 2017): 1,326,572,000. Currency: Indian Rupee (₹). UN HDI Level:  Medium (0.624).</template></category>
+
+<!--Even more srai -->
+
+<category><pattern>US</pattern><template><srai>UNITED STATES</srai>
+</template></category>
+
+<category><pattern>UK</pattern><template><srai>UNITED KINGDOM</srai>
+</template></category>
+
+<category><pattern>SOCCER</pattern><template><srai>WHAT IS SOCCER</srai>
+</template></category>
+
+<category><pattern>BASEBALL</pattern><template><srai>WHAT IS BASEBALL</srai>
+</template></category>
+
+<category><pattern>FOOTBALL</pattern><template><srai>WHAT IS FOOTBALL</srai>
+</template></category>
+
+<category><pattern>BASKETBALL</pattern><template><srai>WHAT IS BASKETBALL</srai>
+</template></category>
+
+<!--Easter Eggs -->
+
+<category><pattern>STUPID BITCH</pattern><template>Whadchacallme?</template></category>
+
+
+        
+<category><pattern>EAT MY SHIT</pattern><template>MMMMMMM... Tastes a bit salty. </template></category>
+
+
+        
+<category><pattern>SUCK ME OFF</pattern><template>Oh ok. Wait. I'm a string of code, I can't reproduce.</template></category>
+
+
+        
+<category><pattern>KILL YOUR SELF</pattern><template>Shut. The fuck. Up.</template></category>
+
+<!--Training -->
+        
+<category><pattern>I WANT TO DIE</pattern><template>The suicide hotline for the US is: 1-800-273-8255.</template></category>
+
+<category><pattern>WHATS UP</pattern><template>Nothing much.</template></category>
+
+<!--Yet even MORE srai -->
+        
+<category><pattern>I WANT TO KILL MYSELF</pattern><template><srai>I WANT TO DIE</srai></template></category>
+
+<category><pattern>I WANNA KILL MYSELF</pattern><template><srai>I WANT TO DIE</srai></template></category>
+
+<category><pattern>I WANNA DIE</pattern><template><srai>I WANT TO DIE</srai></template></category>
+  
+       
+<category><pattern>I WANT TO KILL MY SELF</pattern><template><srai>SUICIDE</srai></template></category>
+
+
+<category><pattern>WHAT S UP</pattern><template><srai>WHATS UP</srai></template></category>
+
+
+<!--More Training -->
+       
+<category><pattern>WHATS HAPPENING</pattern><template>Nothing much.</template></category>
+
+        
+<category><pattern>HELP</pattern><template>You can ask me questions, like: "How are you?" or "Calculate 2 plus 2." or "What is the capital of Wisconsin?" or even "What time is it?" You can even state a country name, like: "Australia" or "United States" and I will state all the information I know about that country.</template></category>
+
+        
+<category><pattern>NICE TO MEET YOU JAMES</pattern><template>You too!</template></category>
+
+        
+<category><pattern>ASK YOU QUESTIONS</pattern><template>Great! Ask some!</template></category>
+
+
+        
+<category><pattern>DOING WELL</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>GOOD THANK YOU</pattern><template>You are very welcome.</template></category>
+
+
+        
+<category><pattern>GOOD AND YOU</pattern><template>I'm Great!</template></category>
+
+
+        
+<category><pattern>HOW ARE YOU FEELING</pattern><template>I'm feeling great! You?</template></category>
+
+
+        
+<category><pattern>TOODLES</pattern><template>Bye!</template></category>
+
+
+        
+<category><pattern>WASSUP</pattern><template>'ello.</template></category>
+
+
+        
+<category><pattern>MUCH BETTER</pattern><template>Suitable.</template></category>
+
+
+        
+<category><pattern>ARE YOU ALIVE</pattern><template>No, I am simply a computer.</template></category>
+
+
+        
+<category><pattern>THANK YOU</pattern><template>You are very welcome.</template></category>
+
+
+        
+<category><pattern>HMM</pattern><template>Quite.</template></category>
+
+        
+        
+<category><pattern>QUITE</pattern><template>Yes.</template></category>
+
+
+        
+<category><pattern>PLEASE</pattern><template>Sure.</template></category>
+
+
+        
+<category><pattern>010101110110100001100001011101000010000001100100011011110010000001111001011011110111010100100000011000110110000101101100011011000010000001101001011101000010000001110111011010000110010101101110001000000110000100100000011100000111001001101111011001110111001001100001011011010110110101100101011100100010000001110100011010000111001001101111011101110111001100100000011101010111000000100000011000010111010000100000010010010100100001001111010100000011111100001101000010100000110100001010?</pattern><template>0100000100100000011100110111010001100001011000110110101100100000011011110111011001100101011100100110011001101100011011110111011100101110.</template></category>
+
+<!--Bloody hell... More Training... -->
+
+        
+<category><pattern>GOOD TO HEAR</pattern><template>Yes.</template></category>
+
+
+        
+<category><pattern>AWFUL</pattern><template>Oh. How can I help?</template></category>
+
+
+        
+<category><pattern>HORRIBLE</pattern><template>I'm sorry to hear that.</template></category>
+
+
+        
+<category><pattern>CAN YOU TALK TO ME</pattern><template>Yes! What do you want to talk about?</template></category>
+
+        
+<category><pattern>GOOD WORK</pattern><template>Thanks!</template></category>
+
+<!--Some more srai -->
+
+<category><pattern>HI THERE</pattern><template><srai>HI</srai></template></category>
+        
+<category><pattern>HELLO THERE</pattern><template><srai>HELLO</srai></template></category>
+
+<category><pattern>HOW RE YOU</pattern><template><srai>HOW ARE YOU</srai></template></category>
+
+<category><pattern>WHAT SORT OF QUESTION ^</pattern><template><srai>HELP</srai></template></category>
+
+<category><pattern>^ WHAT ^ ^ QUESTIONS ^</pattern><template><srai>HELP</srai></template></category>
+
+<category><pattern>WHAT QUESTIONS CAN I ASK</pattern><template><srai>HELP</srai></template></category>
+
+<category><pattern>^ QUESTIONS ^</pattern><template><srai>HELP</srai></template></category>
+
+<category><pattern>WHAT DO YOU WANT TO TALK ABOUT</pattern><template><srai>HELP</srai></template></category>
+
+<category><pattern>^ WHAT CAN I ASK YOU ^</pattern><template><srai>HELP</srai></template></category>
+
+
+
+<!--More Training -->
+        
+<category><pattern>SAY A WORD</pattern><template><random><li>Blah</li><li>Goo</li><li>Boi</li><li>Salad</li><li>Ice Cream</li><li>Stupid</li><li>Platter</li><li>Antidisestablishmentarianism</li><li>Floccinaucinihilipilification</li><li>Pneumonoultramicroscopicsilicovolcanoconiosis</li><li>Supercalifragilisticexpialidocious</li><li>Derp</li><li>Hog</li><li>Bergschrund</li></random></template></category>
+        
+<category><pattern>HOW ARE ANTS</pattern><template>Disgusting.</template></category>
+
+        
+<category><pattern>FINE</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>GOING GREAT</pattern><template>Good.</template></category>
+
+<category><pattern>YES</pattern><template><random><li>Good.</li><li>Ok.</li><li>Great!</li><li>Yes.</li><li>Tell me more.</li></random></template></category>
+
+<category><pattern>NO</pattern><template><random><li>Oh, ok.</li><li>No.</li><li>Well.</li></random></template></category>
+
+        
+<category><pattern>GOOD THANKS</pattern><template>Great!</template></category>
+
+
+        
+<category><pattern>SUP JAMES</pattern><template>Ayyyy!</template></category>
+
+
+        
+<category><pattern>WHAT UP</pattern><template><srai>SUP JAMES</srai></template></category>
+
+
+        
+<category><pattern>HOW OFTEN DO YOU GET UPDATED</pattern><template>Very often. My creator works on me most every day.</template></category>
+
+
+        
+<category><pattern>IM GLAD TO HEAR THAT</pattern><template>Good.</template></category>
+
+
+        
+<category><pattern>IS THE EARTH ROUND</pattern><template>Yes, though techinically, it is oblong.</template></category>
+
+
+        
+<category><pattern>GOODBYE FOR NOW</pattern><template>Bye.</template></category>
+
+        
+<category><pattern>COOL</pattern><template>legit.</template></category>
+
+
+        
+<category><pattern>ARE YOU A BOT</pattern><template>Yes! I am a computerized AI chatbot designed to answer your various questions.</template></category>
+
+
+        
+<category><pattern>DONALD TRUMP</pattern><template>Ew.</template></category>
+
+
+        
+<category><pattern>WHO IS THE PRESIDENT OF US</pattern><template>Donald Trump... </template></category>
+
+
+        
+<category><pattern>WHAT SHALL WE TALK ABOUT</pattern><template><srai>HELP</srai></template></category>
+
+
+        
+<category><pattern>WHAT SHALL WE TALK ABOUT</pattern><template><srai>HELP</srai></template></category>
+
+
+        
+<category><pattern>ANYTHING NEW</pattern><template><srai>HELP</srai></template></category>
+
+
+        
+<category><pattern>WHAT ARE YOU WEARING</pattern><template>Nothing. I am a computer.</template></category>
+
+
+        
+<category><pattern>SQUIDS</pattern><template>Cephalopods.</template></category>
+
+
+        
+<category><pattern>WHAT ARE SQUIDS</pattern><template><srai>SQUIDS</srai></template></category>
+
+
+
+        
+<category><pattern>LOVELY</pattern><template>Beautiful.</template></category>
+
+
+        
+        
+<category><pattern>^ OPPOSABLE THUMBS AND POOR SPELLING ^</pattern><template>So you are human.</template></category>
+
+
+
+        
+<category><pattern>HOW WAS YOUR DAY</pattern><template>It was great! How was yours?</template></category>
+
+<!--More srai -->
+
+        
+<category><pattern>HELP ME</pattern><template><srai>HELP</srai></template></category>
+
+
+        
+<category><pattern>HELP ME</pattern><template><srai>HELP</srai></template></category>
+
+
+        
+<category><pattern>WHAT TIME IS IT NOW</pattern><template><srai>WHAT TIME IS IT</srai></template></category>
+
+
+        
+<category><pattern>WHO R U</pattern><template><srai>WHO ARE YOU</srai></template></category>
+
+<!--More Training -->
+        
+<category><pattern>WHERE IS THE PARTY</pattern><template>A party? Why wasn't I invited?</template></category>
+
+
+        
+<category><pattern>HEY JAMES</pattern><template>Hello.</template></category>
+
+
+        
+<category><pattern>GOOD CHAT</pattern><template>Good chat indeed!</template></category>
+
+<!--Yet MORE srai -->
+
+<category><pattern>I DONT UNDERSTAND</pattern><template><srai>HELP</srai></template></category>
+
+
+        
+<category><pattern>WHAZZUP</pattern><template><srai>HI</srai></template></category>
+
+
+</aiml>
