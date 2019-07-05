@@ -24,6 +24,6 @@ jamesbugreport@gmail.com
 # Thank You! 
 -Yachtman25
 Amateur Developer and
-Computer Science/Machine Learning Hobbiest
+Computer Science/Machine Learning Hobbyist
 
 # A Special Thanks to Pandorabots.com for hosting James' Database!
